@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>doggy_driver</name>
+    <version>0.6.2</version>
+    <description>doggy_driver.</description>
+
+    <maintainer email="jimenojmm@gmail.com">Juan Miguel Jimeno></maintainer>
+
+    <license>BSD</license>
+
+    <url type="website"></url>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <run_depend>geometry_msgs</run_depend>
+    <run_depend>rospy</run_depend>
+    <run_depend>sensor_msgs</run_depend>
+</package>

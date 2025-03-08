@@ -1,0 +1,9 @@
+<launch>
+    <!-- ノードの設定 -->
+    <node name="doggy_driver" pkg="doggy_driver" type="doggy_driver.py" output="screen" required="true">
+        <!-- パラメータの設定 -->
+        <param name="servo_port" value="/dev/ttyUSB0" />
+        <param name="servo_baudrate" value="115200" />
+        <param name="servo_id" value="1" />
+    </node>
+</launch>
