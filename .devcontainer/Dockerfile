@@ -24,11 +24,14 @@ RUN apt-get install -y git vim curl wget
 
 # ROS
 RUN apt-get install -y python-rosdep \
+    ros-melodic-moveit \
     ros-melodic-pointcloud-to-laserscan \
     ros-melodic-ecl-threads \
     ros-melodic-ecl-exceptions \
     ros-melodic-velodyne-gazebo-plugins \
     ros-melodic-ros-controllers \
+    ros-melodic-robot-localization \
+    ros-melodic-teleop-twist-keyboard \
     ros-melodic-joy
 ENV SHELL /bin/bash
 

@@ -2,12 +2,7 @@
     "name": "ROS1 Development Container",
     "privileged": true,
     "remoteUser": "lin",
-    "build": {
-        "dockerfile": "Dockerfile",
-        "args": {
-            "USERNAME": "lin"
-        }
-    },
+    "image": "doggy_ros1:latest",
     "workspaceFolder": "/home/ws",
     "workspaceMount": "source=${localWorkspaceFolder},target=/home/ws,type=bind",
     "customizations": {
