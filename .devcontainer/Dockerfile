@@ -39,6 +39,15 @@ ENV SHELL /bin/bash
 # * Anything else you want to do like clean up goes here *
 # ********************************************************
 
+# Install Python3 and pip
+RUN apt-get install -y python3 python3-pip
+
+# Install Adafruit_PCA9685 
+RUN pip3 install adafruit-circuitpython-pca9685
+
+# delete cache
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+
 # [Optional] Set the default user. Omit if you want to keep the default as root.
 USER $USERNAME
 CMD ["/bin/bash"]
